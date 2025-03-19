@@ -145,3 +145,27 @@ footer {
 .resume-link {
     color: red;
 }
+
+/* Publications Section */
+.publications {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.publication {
+    margin-bottom: 20px;
+}
+
+.publication p {
+    margin: 5px 0;
+}
+
+.publication a {
+    color: #1e90ff; /* Link color */
+    text-decoration: none;
+}
+
+.publication a:hover {
+    text-decoration: underline;
+}
