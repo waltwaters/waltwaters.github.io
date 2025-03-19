@@ -18,11 +18,10 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#awards" id="awards-link">Awards</a></li> <!-- New Awards link -->
+            <li><a href="#awards" id="awards-link">Awards</a></li>
         </ul>
     </div>
 </nav>
-
 
 
     <!-- Hero Section -->
@@ -52,7 +51,7 @@
 <section id="projects" class="projects">
     <div class="container">
         <h2>My Projects</h2>
-        <p>Here are some of the projects I have worked on. A major project: design a cough simulator is spited into three small projects: human coughs measurement, cough modelling, and cough simulators. A key idea is presented as accomplishing smaller objectives and integrating the results to achieve the overall goal.</p>
+        <p>Here are some of the projects I have worked on. A major project was spited into three small projects: human coughs measurement, cough modelling, and cough simulator design. A key idea is presented as accomplishing smaller objectives and integrating the results to achieve the overall goal.</p>
         <div class="project-cards">
             <div class="project-card">
                 <h3>Human Coughs</h3>
@@ -96,8 +95,8 @@
         <h2>Awards</h2>
         <p>I have received several fascinating awards, particularly during my undergraduate studies in Taiwan.
             When I was in the final year, I designed a smart city mapping system using MEMS sensors to detect human activities and algorithms to monitor city activity.
-            This project led to a presentation in Taipei in front of entrepreneurs and government officials.
-            I was the winner of the Keelung Hackathon, competing against 50 teams, and was honored by Lin Yu-chang (林右昌 Youchang LIN), the Mayor of Keelung.
+            This project was presented by me in Taipei in front of entrepreneurs and government officials.
+            Fortunately, I was the winner of the Keelung Hackathon, competing against 50 teams, and was honored by Lin Yu-chang (林右昌 Youchang LIN), the Mayor of Keelung.
             Here are my award certificates, and I'm glad to share this joy with you. (Note that the project details cannot be disclosed due to a signed contract with the government.)</p>
         <embed src="Walt_awards_6pages_eng copy_compressed.pdf" type="application/pdf" width="100%" height="600px" />
     </div>
@@ -121,8 +120,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2024 Walt Wang. All rights reserved.</p>
-            <a href="resume.pdf" download>Download Resume</a>
-        </div>
+            <a href="Walt_Wang_CV_Detailed.pdf" download class="resume-link">Download Resume</a>        </div>
     </footer>
 
 <!-- Add JavaScript to handle the click events with smooth scrolling -->
@@ -158,7 +156,16 @@
             smoothScroll(targetElement, 1000); // Adjust the duration (in milliseconds) as needed
         });
     });
+    document.querySelectorAll('nav ul li a, .cta-btn').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        smoothScroll(targetElement, 1000); // Adjust the duration (in milliseconds) as needed
+    });
+});
 </script>
+
 
 
 </body>

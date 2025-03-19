@@ -140,3 +140,8 @@ footer {
     padding: 40px 0;
     text-align: center;
 }
+
+/* Style for the Resume link */
+.resume-link {
+    color: red;
+}
