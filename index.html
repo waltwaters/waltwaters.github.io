@@ -78,7 +78,7 @@
             <div class="project-card">
                 <h3>Cough Simulator</h3>
                 <p>From 2024 to 2025, I introduced a tunable cough simulator, the first of its kind capable of replicating coughs with precise flow rates and particulate matter size distribution for various human subjects.
-                    This work, presented by me at the Australasian Fluid Mechanics Conference (AFMC) 2025, had a significant impact on the public. The simulator is powered by a motor with adjustable disks and springs.
+                    This work, presented by me at the Australasian Fluid Mechanics Conference (AFMC) 2024, had a significant impact on the public. The simulator is powered by a motor with adjustable disks and springs.
                     The disk size alters the bellows extension distance, simulating lung behavior,
                     while different springs adjust the cough strength, representing muscle force.</p>
                 <img src="images/cough_simulator.png" alt="Project 3 Image" class="project-img">
@@ -110,7 +110,7 @@
         <p>If you would like to get in touch, feel free to reach out and have a chat.</p>
         <ul class="social-links">
             <li><a href="tel:+61432221365">Phone: 0432 221 365</a></li>
-            <li><a href="mailto:walt.wang@unsw.edu.au">Email: walt.wang@unsw.edu.au</a></li>
+            <li><a href="mailto:zhou.wang1999@outlook.com">Email: zhou.wang1999@outlook.com</a></li>
         </ul>
     </div>
 </section>
@@ -125,11 +125,35 @@
 
 <!-- Add JavaScript to handle the click events with smooth scrolling -->
 <script>
+    function smoothScroll(target, duration) {
+        const targetPosition = target.getBoundingClientRect().top;
+        const startPosition = window.pageYOffset;
+        let startTime = null;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = ease(timeElapsed, startPosition, targetPosition, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function ease(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        requestAnimationFrame(animation);
+    }
+
     document.querySelectorAll('nav ul li a').forEach(anchor => {
         anchor.addEventListener('click', function(event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
-            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            const targetElement = document.getElementById(targetId);
+            smoothScroll(targetElement, 1000); // Adjust the duration (in milliseconds) as needed
         });
     });
 </script>
