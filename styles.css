@@ -171,6 +171,19 @@ footer {
     text-decoration: underline;
 }
 
+/* Default styles for the PDF embed */
+.awards embed {
+    width: 100%;
+    height: 600px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .awards embed {
+        height: 300px; /* Adjust the height for smaller screens */
+    }
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .container {
