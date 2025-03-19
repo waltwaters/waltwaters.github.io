@@ -79,7 +79,6 @@ video {
     height: auto;
 }
 
-
 /* Projects Section */
 .projects {
     padding: 40px 0;
@@ -90,6 +89,7 @@ video {
 .project-cards {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .project-card {
@@ -97,6 +97,7 @@ video {
     background-color: #f9f9f9;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .project-card img {
@@ -168,4 +169,37 @@ footer {
 
 .publication a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .hero-img {
+        width: 200px;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
