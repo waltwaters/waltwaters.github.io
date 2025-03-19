@@ -9,23 +9,27 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+
+<!-- Update the Navigation Bar -->
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#awards" id="awards-link">Awards</a></li> <!-- New Awards link -->
+        </ul>
+    </div>
+</nav>
+
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hi, I'm Walt Wang</h1>
-            <p>I'm a passionate researcher and engineer specializing in medicine and fluid dynamics.</p>
+            <p>I'm a passionate researcher and engineer specialising in bioengineering and fluid dynamics.</p>
             <a href="#about" class="cta-btn">Learn More</a>
         </div>
         <!-- Hero image -->
@@ -41,12 +45,6 @@
                 I have experience in both academic research and practical projects. I'm passionate about developing innovative solutions that bridge engineering and real-world applications.
             </p>
 
-            <!-- Add a GIF or video showing your workflow -->
-            <video controls width="640" height="360">
-                <source src="Figures/manikin_iphone.mov" type="video/quicktime">
-                <source src="Figures/manikin_iphone.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
         </div>
     </section>
 
@@ -77,18 +75,28 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you would like to get in touch, feel free to reach out through my social media channels!</p>
-            <ul class="social-links">
-                <li><a href="https://github.com/waltwaters" target="_blank">GitHub</a></li>
-                <li><a href="https://twitter.com/waltwaters" target="_blank">Twitter</a></li>
-                <li><a href="https://linkedin.com/in/waltwaters" target="_blank">LinkedIn</a></li>
-            </ul>
-        </div>
-    </section>
+
+<!-- Add the Awards Section -->
+<section id="awards" class="awards">
+    <div class="container">
+        <h2>Awards</h2>
+        <embed src="Walt_awards_8Pages_eng.pdf" type="application/pdf" width="100%" height="600px" />
+    </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, feel free to reach out.</p>
+        <ul class="social-links">
+            <li><a href="tel:+61432221365">Phone: 0432 221 365</a></li>
+            <li><a href="mailto:walt.wang@unsw.edu.au">Email: walt.wang@unsw.edu.au</a></li>
+        </ul>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -97,6 +105,16 @@
             <a href="resume.pdf" download>Download Resume</a>
         </div>
     </footer>
+
+<!-- Add JavaScript to handle the click event -->
+<script>
+    document.getElementById('awards-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('awards').style.display = 'block';
+        window.location.hash = 'awards';
+    });
+</script>
+
 
 </body>
 </html>
