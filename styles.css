@@ -184,7 +184,6 @@ footer {
     }
 }
 
-
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .container {
@@ -226,7 +225,7 @@ footer {
 }
 
 .hero-img {
-    width: 300px; /* Set a fixed width */
+    width: 350px; /* Set a fixed width */
     height: auto; /* Maintain aspect ratio */
     margin-right: 20px; /* Space between image and text */
     flex-shrink: 0; /* Prevent the image from shrinking */

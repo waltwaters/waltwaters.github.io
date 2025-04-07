@@ -9,49 +9,46 @@
 </head>
 <body>
 
+<!--<nav>-->
+<!--    <div class="container">-->
+<!--        <ul>-->
+<!--            <li><a href="#home">Home</a></li>-->
+<!--            <li><a href="#about">About</a></li>-->
+<!--            <li><a href="#projects">Projects</a></li>-->
+<!--            <li><a href="#publications">Publications</a></li>-->
+<!--            <li><a href="#awards">Awards</a></li>-->
+<!--            <li><a href="#contact">Contact</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->
 
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm Walt Wang</h1>
+        <p>I'm a passionate postgraduate researcher and engineer at UNSW</p>
+        <p>in turbulent and energy transfer.</p>
+        <img src="images/hero-image.jpg" alt="Walt Wang Professional Photo" class="hero-img">
     </div>
-</nav>
-
+</section>
 <a href="Walt_Wang_CV_Detailed.pdf" class="resume-btn">View the Resume</a>
 
+<!-- About Me Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello, I'm Walt—a dedicated researcher and engineer with a passion for fluid dynamics and respiratory exhalations. My work focuses on understanding the intricacies of how people cough, using scientific methods to uncover new insights. Outside of my professional life, I enjoy photography, cycling, and exploring the mountains. Whether it's capturing the perfect landscape photo or embarking on a challenging hike, I am always seeking new adventures.</p>
+        <img src="images/coogee_sunset.jpeg" alt="Simulator Cough GIF" class="project-img" style="width: 31.2%;">
+        <p>After work, I usually take a walk to Coogee Beach. I captured this photo by chance in August 2024, and views like this always inspire me to delve deeper into the mysteries of the universe.</p>
+        <p>And some of my work holds a beauty equal to nature’s wonders—the beauty of unknown knowledge waiting to be discovered...</p>
+        <img src="images/simulator_cough.gif" alt="Simulator Cough GIF" class="project-img" style="width: 31.2%;">
+        <img src="images/simulator_piv_video-2.gif" alt="Simulator Cough GIF" class="project-img" style="width: 30%;">
+        <p>This is how a cough flow moves. Isn't it beautiful?</p>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Walt Wang</h1>
-            <p>I'm a passionate postgraduate researcher and engineer at UNSW</p>
-            <p>in turbulent and energy.</p>
-            <img src="images/hero-image.jpg" alt="Walt Wang Professional Photo" class="hero-img">
-        </div>
-        <!-- Hero image -->
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello, I'm Walt—a dedicated researcher and engineer with a passion for fluid dynamics and respiratory exhalations. My work focuses on understanding the intricacies of how people cough, using scientific methods to uncover new insights. Outside of my professional life, I enjoy photography, cycling, and exploring the mountains. Whether it's capturing the perfect landscape photo or embarking on a challenging hike, I am always seeking new adventures.</p>            <img src="images/coogee_sunset.jpeg" alt="Simulator Cough GIF" class="project-img" style="width: 31.2%;">
-            <p>After work, I usually take a walk to Coogee Beach. I captured this photo by chance in August 2024, and views like this always inspire me to delve deeper into the mysteries of the universe.</p>
-            <p>And some of my work holds a beauty equal to nature’s wonders—the beauty of unknown knowledge waiting to be discovered...</p>
-            <img src="images/simulator_cough.gif" alt="Simulator Cough GIF" class="project-img" style="width: 31.2%;">
-            <img src="images/simulator_piv_video-2.gif" alt="Simulator Cough GIF" class="project-img" style="width: 30%;">
-            <p>This is how a cough flow moves. Isn't it beautiful?</p>
-
-        </div>
-    </section>
-
-    <!-- Projects Section -->
+<!-- Projects Section -->
 <section id="projects" class="projects">
     <div class="container">
         <h2>My Projects</h2>
@@ -59,37 +56,22 @@
         <div class="project-cards">
             <div class="project-card">
                 <h3>Human Coughs</h3>
-                <p>In 2024, I tested the coughs of 12 volunteers (11 male, 1 female) for flow rate and particulate matter measurement.
-                    The figure below shows that a human cough is being captured using Particle Image Velocimetry (PIV),
-                    with a high-speed camera recording 1500 frames in 1.5 seconds.
-                   </p>
+                <p>In 2024, I tested the coughs of 12 volunteers (11 male, 1 female) for flow rate and particulate matter measurement. The figure below shows that a human cough is being captured using Particle Image Velocimetry (PIV), with a high-speed camera recording 1500 frames in 1.5 seconds.</p>
                 <img src="images/human_piv1.png" alt="Project 1 Image" class="project-img">
-                <!-- Additional images for Project 1 -->
-<!--                <img src="images/human_piv2.png" alt="Project 1 Additional Image 1" class="project-img">-->
-
-                <p> The measured flow rate as a function of time of 36 coughs (grey) and the average cough (blue) are also shown.
-                    Look at grey lines, human coughs are so different from each other!</p>
+                <p>The measured flow rate as a function of time of 36 coughs (grey) and the average cough (blue) are also shown. Look at grey lines, human coughs are so different from each other!</p>
                 <img src="images/measured_human_coughs.png" alt="Project 1 Additional Image 2" class="project-img">
             </div>
             <div class="project-card">
                 <h3>Cough Modelling</h3>
-                <p>To better understand human coughs and assist in designing the cough simulator, I developed a mathematical model on MATLAB to replicate actual human cough measurements and determine the correct input for the simulator.
-                    The figure shows that the model achieves high accuracy after being tuned to match a cough from the well-known study by Gupta et al. (2009).
-                    </p>
+                <p>To better understand human coughs and assist in designing the cough simulator, I developed a mathematical model on MATLAB to replicate actual human cough measurements and determine the correct input for the simulator. The figure shows that the model achieves high accuracy after being tuned to match a cough from the well-known study by Gupta et al. (2009).</p>
                 <img src="images/model_human_cough.png" alt="Project 2 Image" class="project-img">
-                <!-- Additional images for Project 2 -->
-                <p>Moreover, the model can be tuned to match other measured human coughs. The blue one is the mean human cough we just got,
-                    and the black one is an example target human cough. </p>
+                <p>Moreover, the model can be tuned to match other measured human coughs. The blue one is the mean human cough we just got, and the black one is an example target human cough.</p>
                 <img src="images/model_human_cough_2.png" alt="Project 2 Additional Image 1" class="project-img">
                 <img src="images/model_human_cough_3.png" alt="Project 2 Additional Image 2" class="project-img">
             </div>
             <div class="project-card">
                 <h3>Cough Simulator</h3>
-                <p>Over two years hard work, I introduced a tunable cough simulator, the first in the history, capable of replicating coughs with precise flow rates and particulate matter size distribution for various human subjects.
-                    The simulator is powered by a motor (F) with an adjustable disk (I) and spring (J).
-                    The disk size alters the bellows extension distance, simulating lung behavior,
-                    while different springs adjust the cough strength, representing muscle force.
-                    </p>
+                <p>Over two years hard work, I introduced a tunable cough simulator, the first in the history, capable of replicating coughs with precise flow rates and particulate matter size distribution for various human subjects. The simulator is powered by a motor (F) with an adjustable disk (I) and spring (J). The disk size alters the bellows extension distance, simulating lung behavior, while different springs adjust the cough strength, representing muscle force.</p>
                 <img src="images/cough_simulator.png" alt="Project 3 Image" class="project-img">
                 <p>This work, presented by me at the Australasian Fluid Mechanics Conference (AFMC) 2024, had a significant impact on the public.</p>
                 <p>The detail of the whole study can be found in my thesis, which is available upon request.</p>
@@ -98,13 +80,12 @@
     </div>
 </section>
 
-
 <!-- Publications Section -->
 <section id="publications" class="publications">
     <div class="container">
         <h2>Publications</h2>
         <div class="publication">
-            <p>This work was published at the Australasian Fluid Mechanics Conference (AFMC) 2024. A journal paper is currently in preparation and will be published soon.<p>
+            <p>This work was published at the Australasian Fluid Mechanics Conference (AFMC) 2024. A journal paper is currently in preparation and will be published soon.</p>
             <p><strong>Design and Characterisation of a Cough Simulator</strong></p>
             <p><em>Zhou Wang</em>, Prateek Bahl, David Treck, Raina MacIntyre, Con Doolan, Charitha de Silva</p>
             <p><a href="https://afmc2024.org/papers/ea/AFMC2024_extended_abstract_118.pdf">Paper No: AFMC2024-118</a></p>
@@ -112,22 +93,14 @@
     </div>
 </section>
 
-
-<!-- Add the Awards Section -->
+<!-- Awards Section -->
 <section id="awards" class="awards">
     <div class="container">
         <h2>Awards</h2>
-        <p>I have received several fascinating awards, particularly during my undergraduate studies in Taiwan.
-            In 2022, I designed a smart city mapping system using MEMS sensors to detect human activities and algorithms to monitor city activity.
-            This project was presented by me in Taipei in front of entrepreneurs and government officials.
-            Fortunately, I was the winner of the Keelung Hackathon, competing against 50 teams, and was honored by Lin Yu-chang (林右昌 Youchang LIN), the Mayor of Keelung.
-            Here are my award certificates, and I'm glad to share this joy with you. </p>
+        <p>I have received several fascinating awards, particularly during my undergraduate studies in Taiwan. In 2022, I designed a smart city mapping system using MEMS sensors to detect human activities and algorithms to monitor city activity. This project was presented by me in Taipei in front of entrepreneurs and government officials. Fortunately, I was the winner of the Keelung Hackathon, competing against 50 teams, and was honored by Lin Yu-chang (林右昌 Youchang LIN), the Mayor of Keelung. Here are my award certificates, and I'm glad to share this joy with you.</p>
         <embed src="Walt_awards_6pages_eng copy_compressed.pdf" type="application/pdf" width="100%" height="600px" />
-<!--        <p>(Note that the project details cannot be disclosed due to a signed contract with the government.)</p>-->
     </div>
 </section>
-
-
 
 <!-- Contact Section -->
 <section id="contact" class="contact">
@@ -142,12 +115,13 @@
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Walt Wang. All rights reserved.</p>
-            <a href="Walt_Wang_CV_Detailed.pdf" download class="resume-link">Download Resume</a>        </div>
-    </footer>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Walt Wang. All rights reserved.</p>
+        <a href="Walt_Wang_CV_Detailed.pdf" download class="resume-link">Download Resume</a>
+    </div>
+</footer>
 
 <!-- Add JavaScript to handle the click events with smooth scrolling -->
 <script>
@@ -182,17 +156,16 @@
             smoothScroll(targetElement, 1000); // Adjust the duration (in milliseconds) as needed
         });
     });
+
     document.querySelectorAll('nav ul li a, .cta-btn').forEach(anchor => {
-    anchor.addEventListener('click', function(event) {
-        event.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        smoothScroll(targetElement, 1000); // Adjust the duration (in milliseconds) as needed
+        anchor.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            smoothScroll(targetElement, 1000); // Adjust the duration (in milliseconds) as needed
+        });
     });
-});
 </script>
-
-
 
 </body>
 </html>
