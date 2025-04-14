@@ -1,13 +1,13 @@
 /* Basic Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -83,7 +83,6 @@ video {
 .projects {
     padding: 40px 0;
     text-align: center;
-    background-color: #fff;
 }
 
 .project-cards {
@@ -94,7 +93,6 @@ video {
 
 .project-card {
     width: 30%;
-    background-color: #f9f9f9;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -110,7 +108,7 @@ video {
 .contact {
     padding: 40px 0;
     text-align: center;
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 
 .social-links {
@@ -151,7 +149,7 @@ footer {
 .publications {
     padding: 40px 0;
     text-align: center;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .publication {
@@ -201,7 +199,7 @@ html, body {
 
 /* Ensure the container takes the full size of the body */
 .container {
-    width: 90%;
+    width: 80%;
     height: 100%;
 }
 
