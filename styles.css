@@ -195,13 +195,13 @@ footer {
 /* Ensure the page has a fixed size */
 html, body {
     width: 1600px; /* Set your desired width */
-    height: 800px; /* Set your desired height */
+    height: auto; /* Set your desired height */
     overflow: auto; /* Allow scrolling */
 }
 
 /* Ensure the container takes the full size of the body */
 .container {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -210,7 +210,7 @@ html, body {
 
 /* Apply max-width to specific text elements */
 .hero-content, .about, .projects, .publications, .awards, .contact {
-    max-width: 1200px; /* Adjust the value as needed */
+    max-width: auto; /* Adjust the value as needed */
     margin: 0 auto;
     padding: 0 20px; /* Add some padding for better spacing */
 }
